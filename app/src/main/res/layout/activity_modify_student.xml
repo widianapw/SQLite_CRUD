@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.sayem.geeknot.sqlitecrud.ModifyTeachersActivity">
+    tools:context=".ModifyStudentsActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -102,22 +102,31 @@
             android:inputType="phone"/>
     </LinearLayout>
 
-    <Button
-        android:id="@+id/btnupdate"
-        android:background="@drawable/button"
-        android:layout_width="match_parent"
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:textColor="@color/colorWhite"
-        android:text="@string/update"
-        android:textSize="20sp" />
+        android:orientation="horizontal">
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/btnupdate"
+            android:background="@drawable/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:text="@string/update"
+            android:textSize="20sp" />
 
-    <Button
-        android:id="@+id/btndelete"
-        android:background="@drawable/button_add"
-        android:textColor="@color/colorWhite"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/delete"
-        android:textSize="20sp" />
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/btndelete"
+            android:background="@drawable/button_add"
+            android:textColor="@color/colorWhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/delete"
+            android:textSize="20sp" />
+    </LinearLayout>
+
 
 </LinearLayout>

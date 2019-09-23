@@ -11,7 +11,7 @@
     <string name="store">Store</string>
     <string name="add">Add New Teacher</string>
     <string name="mod">Modify</string>
-    <string name="inst_text">To Edit,\nTap on the Items from the List</string>
+    <string name="inst_text">Tap on the Items from the List \n To Edit or Delete</string>
     <string name="update">Update</string>
     <string name="delete">Delete</string>
 </resources>

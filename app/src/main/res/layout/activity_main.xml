@@ -1,38 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.sayem.geeknot.sqlitecrud.MainActivity"
-    >
-
-
-    <Button
-
-        android:id="@+id/btn_add_teacher"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/button"
-        android:textColor="@color/colorWhite"
-        android:text="Add Student" />
-
-    <Button
-
-        android:id="@+id/btn_teacher_modify"
-        android:layout_width="match_parent"
-        android:background="@drawable/button_add"
-        android:layout_height="wrap_content"
-        android:textColor="@color/colorWhite"
-        android:text="@string/mod" />
-
+    tools:context=".MainActivity">
 
     <ListView
+        android:layout_alignParentTop="true"
         android:id="@+id/teachers_lv"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_above="@id/linear1">
 
     </ListView>
 
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/btn_add_teacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:text="Add Student"
+            android:layout_weight="1"
+            android:textColor="@color/colorWhite"
+            />
 
-</LinearLayout>
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/btn_teacher_modify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_add"
+            android:text="Edit or Delete"
+            android:textColor="@color/colorWhite" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
